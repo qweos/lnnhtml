@@ -33,7 +33,14 @@ $(window).load(function(){
         }
     })
 
-    $.lockfixed('#sidebar', {offset: {top: 120, bottom: $(document).height() - ($("#main-content").height() + $('header').height() + 200 )}});
+    if ($('.fixed-sidebar #main-content').height() > $('.fixed-sidebar #sidebar').height()){
+        $.lockfixed('#sidebar', {
+            offset: { 
+                top: 120, 
+                bottom: ($('.more').height() + $('#contact').height()) + 250
+            }
+        });
+    }
 
 
     $('a[rel^="external"]').click( function() {
