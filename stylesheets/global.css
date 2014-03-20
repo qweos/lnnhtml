@@ -245,32 +245,19 @@ p:last-child { padding-bottom: 0; }
     padding-left: 20px;
     padding-right: 0;    
 } 
-.two-col .col h2 {
+.two-col .col h2, .fixed-sidebar h2 {
     font-size: inherit;
     font-weight: bold;
     font-family: "Lato", "Helvetica Neue", sans-serif;
     margin-bottom: 22px;
 }
-.two-col .col p { line-height: 1.2; }
+.two-col .col p, .fixed-sidebar #sidebar p { line-height: 1.2; }
 
 /* two columns with left sidebar */
 .left-sidebar .col { width: 68%; }
 .left-sidebar .col:first-child {
     width: 32%;
     padding-right: 60px;
-}
-
-.left-sidebar .col h2 { text-transform: uppercase; }
-.left-sidebar .col:first-child h2 { font-weight: normal; }
-.left-sidebar .col:last-child h2 { padding-top: 15px; }
-.left-sidebar .col:last-child h2:first-child { padding-top: 0; }
-
-#sidebar-wrapper { position: relative; }
-#sidebar { 
-background: red;
-width: 200px;
-float: left;
-overflow: hidden;
 }
 
 /* two columns with right sidebar */
@@ -283,6 +270,29 @@ overflow: hidden;
     text-transform: uppercase;
     font-weight: normal;
 }
+
+/* fixed "sticky" sidebar */
+.fixed-sidebar {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;  
+}
+.fixed-sidebar #sidebar {
+  background: red;
+  float: left;
+  width: 27%;
+  margin-right: 7%;
+}
+.fixed-sidebar #main-content {
+  display: inline-block;
+  width: 66%;
+}
+
+/* common for sidebar */
+.left-sidebar .col h2, .fixed-sidebar #main-content h2 { text-transform: uppercase; }
+.left-sidebar .col:first-child h2, .fixed-sidebar #sidebar h2 { font-weight: normal; }
+.left-sidebar .col:last-child h2, .fixed-sidebar #main-content h2 { padding-top: 15px; }
+.left-sidebar .col:last-child h2:first-child, .fixed-sidebar #sidebar h2  { padding-top: 0; }
 
 /* three columns */
 .three-col { overflow: hidden; }
