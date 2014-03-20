@@ -272,20 +272,23 @@ p:last-child { padding-bottom: 0; }
 }
 
 /* fixed "sticky" sidebar */
-.fixed-sidebar {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;  
+.fixed-sidebar { *zoom: 1; }
+.fixed-sidebar:before,.fixed-sidebar:after {
+    display: table;
+    content: "";
+    line-height: 0;
 }
+.fixed-sidebar:after { clear: both; }
+
+
 .fixed-sidebar #sidebar {
   background: red;
   float: left;
-  width: 27%;
-  margin-right: 7%;
+  max-width: 27%;
 }
 .fixed-sidebar #main-content {
-  display: inline-block;
-  width: 66%;
+  float: right;
+  max-width: 66%;
 }
 
 /* common for sidebar */
