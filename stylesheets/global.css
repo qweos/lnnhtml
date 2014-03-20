@@ -779,7 +779,7 @@ blockquote.small-quote p {
 .course-date .date .total-length { margin-bottom: 20px; }
 
 /*  course call-to-action */
-.call-to-action {
+#sidebar .call-to-action {
     padding: 25px 0;
     border-top: 1px dotted #fff;
     border-bottom: 1px dotted #fff;
