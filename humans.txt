@@ -1,0 +1,16 @@
+/* ABOUT */
+
+Lanavenodriza.com surge con la vocación de crear nuevas experiencias formativas en el campo del diseño, formas diferentes de aprender. Perseguimos la idea de crear un entorno donde estudiantes y ponentes trabajen juntos, dando forma a un modelo educativo que sea útil tanto a la academia como a la industria, y donde la práctica tenga un papel fundamental.
+
+Los que organizamos esto llevamos a nuestras espaldas varios años impartiendo formación en otros másters, talleres, cursos y seminarios de diversas escuelas y universidades. Somos amigos, y la gente que sale de aquí forma parte de ese nuevo núcleo de amistad.
+
+Lanavenodriza.com es una idea de Ignacio Buenhombre, Juan Leal e Isabel Inés (Ludita).
+
+Si tienes curiosidad por saber de qué va todo esto, visita: http://www.lanavenodriza.com/
+
+/* SITE */
+
+Started: 2014/03/09
+Language: Spanish
+Doctype: HTML5
+IDE: Coda2, ImageOptim, Fireworks
